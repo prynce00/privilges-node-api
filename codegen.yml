@@ -1,0 +1,13 @@
+schema: src/schema.ts
+overwrite: true
+generates:
+  src/graphql-types.ts:
+    plugins:
+      - add: '/* eslint-disable */'
+      - add: '// @ts-nocheck'
+      - typescript
+      - typescript-resolvers
+    config:
+      skipTypename: true
+      typesPrefix: I
+      useIndexSignature: true
