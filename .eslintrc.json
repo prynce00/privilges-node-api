@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "sort-keys-fix",
+    "simple-import-sort",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/ban-ts-ignore": "off",
+    "@typescript-eslint/camelcase": [
+      "error",
+      {
+        "allow": [
+          "my_rules"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": "off",
+    "prettier/prettier": "error",
+    "simple-import-sort/sort": "error",
+    "sort-keys-fix/sort-keys-fix": "error"
+  }
+}
